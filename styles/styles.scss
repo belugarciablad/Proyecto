@@ -146,6 +146,9 @@ header{
         line-height: 42px;
         letter-spacing: 0;
         font-weight: normal;
+        .strike{
+            text-decoration: line-through;
+        }
     }
     p{
         font-family: $sec-font;

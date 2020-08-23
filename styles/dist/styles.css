@@ -124,6 +124,9 @@ header img {
   letter-spacing: 0;
   font-weight: normal;
 }
+.welcome .welcome-title .strike {
+  text-decoration: line-through;
+}
 .welcome p {
   font-family: "IBM Plex Mono";
   font-size: 14px;
