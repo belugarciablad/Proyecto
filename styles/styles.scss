@@ -35,14 +35,14 @@ body{
 }
 
 // HEADER 
-header{
+.header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     height: 44px;
 
-    img{
+    .logo{
         width: 24px;
         height: 24px;
         margin-left: 16px;
@@ -103,17 +103,17 @@ header{
                 padding-left: 16px;
 
             }
-            a{
+            .nav-anchor{
                 font-family: $sec-font;
                 color: $bg-color;
                 text-decoration: none;
                 font-size: 16px;
             } 
-            a:hover{
+            .nav-anchor:hover{
                 color: $hover-color;
                 text-decoration: line-through;
             }
-            a:active{
+            .nav-anchor:active{
                 color: $active-color;
                 opacity: $active-op;
                 text-decoration: line-through;
@@ -369,9 +369,9 @@ header{
 }
 
 // ######## footer #########
-footer{
+.footer{
     height: 121px;
-    span{
+    .registred{
         font-family: $sec-font;
         font-size: 14px;
         color: $txt-color;
@@ -404,11 +404,11 @@ footer{
     html,body, header{
         width: 100%;
     }
-    header{
+    .header{
         height: 80px;
         padding-left: 100px;
         margin-right: 100px;
-        img{
+        .logo{
             margin-left: 0;
             margin-top: 22px;
             width: 36px;
@@ -438,16 +438,16 @@ footer{
                 .nav-item{
                     margin-top: 26px;
                     
-                    a{
+                    .nav-anchor{
                         width: 100%;
                         color: $txt-color;
                         
                     }
-                    a:hover{
+                    .nav-anchor:hover{
                         color: $hover-color;
                         text-decoration: line-through;
                     }
-                    a:active{
+                    .nav-anchor:active{
                         color: $active-color;
                         opacity: $active-op;
                         text-decoration: line-through;
@@ -602,12 +602,12 @@ footer{
         }
     }
 
-    footer{
+    .footer{
         display: grid;
         grid-template-columns: 1fr 3fr 7fr 3fr 1fr ;
         grid-template-rows: 1fr;
         align-items: center;
-        span{
+        .registred{
             grid-column: 2;
             font-size: 16px;
         }

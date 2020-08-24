@@ -21,14 +21,14 @@ body {
   background: #FFFFFF;
 }
 
-header {
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
   height: 44px;
 }
-header img {
+.header .logo {
   width: 24px;
   height: 24px;
   margin-left: 16px;
@@ -85,17 +85,17 @@ header img {
   height: 28px;
   padding-left: 16px;
 }
-.menu-hamb .nav-bar .nav-list a {
+.menu-hamb .nav-bar .nav-list .nav-anchor {
   font-family: "IBM Plex Mono";
   color: #FFFFFF;
   text-decoration: none;
   font-size: 16px;
 }
-.menu-hamb .nav-bar .nav-list a:hover {
+.menu-hamb .nav-bar .nav-list .nav-anchor:hover {
   color: #00F3BB;
   text-decoration: line-through;
 }
-.menu-hamb .nav-bar .nav-list a:active {
+.menu-hamb .nav-bar .nav-list .nav-anchor:active {
   color: #060A24;
   opacity: 0.56;
   text-decoration: line-through;
@@ -323,10 +323,10 @@ header img {
   margin-top: 36px;
 }
 
-footer {
+.footer {
   height: 121px;
 }
-footer span {
+.footer .registred {
   font-family: "IBM Plex Mono";
   font-size: 14px;
   color: #060A24;
@@ -336,13 +336,13 @@ footer span {
   display: block;
   margin: 24px 0;
 }
-footer .social-netw-icons {
+.footer .social-netw-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin: 0 10px;
 }
-footer .social-netw-icons i {
+.footer .social-netw-icons i {
   font-size: 16px;
   color: #060A24;
   letter-spacing: 0;
@@ -354,12 +354,12 @@ footer .social-netw-icons i {
     width: 100%;
   }
 
-  header {
+  .header {
     height: 80px;
     padding-left: 100px;
     margin-right: 100px;
   }
-  header img {
+  .header .logo {
     margin-left: 0;
     margin-top: 22px;
     width: 36px;
@@ -388,15 +388,15 @@ footer .social-netw-icons i {
   .menu-hamb .nav-bar .nav-list .nav-item {
     margin-top: 26px;
   }
-  .menu-hamb .nav-bar .nav-list .nav-item a {
+  .menu-hamb .nav-bar .nav-list .nav-item .nav-anchor {
     width: 100%;
     color: #060A24;
   }
-  .menu-hamb .nav-bar .nav-list .nav-item a:hover {
+  .menu-hamb .nav-bar .nav-list .nav-item .nav-anchor:hover {
     color: #00F3BB;
     text-decoration: line-through;
   }
-  .menu-hamb .nav-bar .nav-list .nav-item a:active {
+  .menu-hamb .nav-bar .nav-list .nav-item .nav-anchor:active {
     color: #060A24;
     opacity: 0.56;
     text-decoration: line-through;
@@ -527,20 +527,20 @@ footer .social-netw-icons i {
     margin-top: 48px;
   }
 
-  footer {
+  .footer {
     display: grid;
     grid-template-columns: 1fr 3fr 7fr 3fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
   }
-  footer span {
+  .footer .registred {
     grid-column: 2;
     font-size: 16px;
   }
-  footer .social-netw-icons {
+  .footer .social-netw-icons {
     grid-column: 4;
   }
-  footer .social-netw-icons .fab {
+  .footer .social-netw-icons .fab {
     justify-content: space-around;
   }
 }
