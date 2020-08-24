@@ -220,6 +220,12 @@ header{
             grid-template-rows: repeat(4,1fr);
             grid-gap: 10px;
             margin: 75px 11px 0px 11px;
+            iframe{
+                width: 100%;
+                height: 232px;
+                border: none;
+                overflow: hidden;
+            }
         }
     }
 
@@ -502,6 +508,12 @@ footer{
                 grid-template-rows: repeat(2,1fr);
                 grid-gap: 72px;
                 margin: 100px 100px 0px 100px;
+                iframe{
+                    width: 100%;
+                    height: 232px;
+                    border: none;
+                    overflow: hidden;
+                }
             }
         }
     }
